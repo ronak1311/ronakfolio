@@ -2,7 +2,7 @@ import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin } from "@tabler/
 const Info = {
     name: "Ronakkumar Gandhi",
     stack: ["Pro Frontend Engineer", "Emerging Full Stack Developer", "Former Student Pilot"],
-    bio: "I'm a passionate Frontend engineer specialized in crafting efficient and scalable solutions, deliver top-notch web applications, and provide freelance services that exceed client expectations. Let's connect and create something amazing together!"
+    bio: "Welcome! I'm a passionate Frontend Engineer dedicated to crafting efficient and scalable web solutions. With proven expertise in frontend development and a strong command of React JS, I excel at delivering top-notch applications that exceed expectations. Currently, I'm on an exciting journey to become a full stack developer, and I'm always eager to learn and adapt to new technologies. Right now, I'm actively seeking job opportunities in Canada. Let's create the future of web development together!"
 }
 
 
@@ -64,14 +64,14 @@ const ExperienceInfo = [
     {
         role: "Customer Service Representative",
         company: "Walmart",
-        date: "Dec 2022 - Present",
+        date: "Dec 2022 - Present, Kitchener,Canada (Part Time)",
         desc: "I successfully led the Fresh department team operations for a major Walmart project, demonstrating exceptional teamwork and communication skills. By increasing inventory accuracy by 20% through strategic planning and meticulous attention to detail, I surpassed challenging targets. My dedicated efforts in optimizing the sales floor organization enhanced the customer experience by 50% during both morning and overnight shifts. Managing one of the largest teams, I consistently delivered outstanding results and upheld high operational standards. Additionally, I provided exceptional customer service, promptly resolving inquiries and addressing customer needs, while excelling in stock management.",
         skills: ["Leadership", "Communication", "Team Management", "Customer Service"]
     },
     {
         role: "Frontend Developer",
         company: "Solulab Inc",
-        date: "Jan 2019 - Aug 2022",
+        date: "Jan 2019 - Aug 2022, Ahmedabad,India",
         desc: "I architected and built high-performance, user-friendly front-end applications, increasing website loading speed by 20%. By writing and debugging well-tested code, I reduced development time by 15% through a reusable UI component library. Collaborating with UI/UX designers, product managers, and engineers, I ensured on-time, budget-conscious project delivery. Mentoring junior developers and conducting code reviews boosted team productivity by 10%. Additionally, I standardized UI best practices, reducing errors by 25%, and improved project efficiency by 30% using tools like Git and Jira",
         skills: ["React JS", "Typescript", "Javascript", "Next JS", "Web3", "Node JS","Agile", "Jira", "Git", "Automation Testing", "AWS "]
     }
