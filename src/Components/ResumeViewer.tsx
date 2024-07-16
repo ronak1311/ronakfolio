@@ -2,7 +2,6 @@ import { ActionIcon, Modal, ScrollArea, Tooltip, useMatches } from "@mantine/cor
 import { IconArrowBigDownLineFilled } from "@tabler/icons-react";
 import { Document, Page } from "react-pdf";
 import { Info } from "../User";
-
 const ResumeViewer = (props: any) => {
     const btn=useMatches({
         xs:'xs',
@@ -15,7 +14,7 @@ const ResumeViewer = (props: any) => {
             <Modal.Header className="!bg-bgColor xs-mx:!p-2 !border-primaryColor xs-mx:!border  !border-2 xs-mx:!border-b-0 !border-b-0 !rounded-tl-3xl !rounded-tr-3xl">
                 <Modal.Title data-autofocus className="!text-4xl xs-mx:!text-2xl text-white flex gap-3 items-center !font-bold">Resume
                 <Tooltip label="Download" className="!text-bgColor" color="#64FFDA" position="right" offset={5}>
-                    <ActionIcon className="!text-primaryColor" component="a" href="/Ronakkumar_Gandhi.pdf" size={btn} download={Info.name} variant="outline" color="#64FFDA">
+                    <ActionIcon className="!text-primaryColor" component="a" href={require('./Ronakkumar_Gandhi.pdf')} size={btn} download={Info.name} variant="outline" color="#64FFDA">
                         <IconArrowBigDownLineFilled className=" xs-mx:!w-[16px] xs-mx:!h-" />
                     </ActionIcon>
                     </Tooltip>

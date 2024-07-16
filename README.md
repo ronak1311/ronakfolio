@@ -1,4 +1,6 @@
-# My Portfolio Hi there! I'm a passionate Frontend Engineer with a knack for crafting efficient and scalable web solutions. My journey in web development has been driven by a commitment to excellence and a constant pursuit of innovation.
+# My Portfolio 
+
+Hi there! I'm a passionate Frontend Engineer with a knack for crafting efficient and scalable web solutions. My journey in web development has been driven by a commitment to excellence and a constant pursuit of innovation.
 
 ## Available Scripts
 
