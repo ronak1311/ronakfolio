@@ -1,4 +1,4 @@
-import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconMail } from "@tabler/icons-react";
 const Info = {
     name: "Ronakkumar Gandhi",
     stack: ["Pro Frontend Engineer", "Emerging Full Stack Developer", "Former Student Pilot"],
@@ -32,7 +32,7 @@ const ProjectInfo = [
 const SkillInfo = [
     {
         title: "Web Technologies & Frameworks",
-        skills: ["HTML", "CSS", "SASS", "JavaScript", "React JS", "Next JS","Node JS", "Express JS", "Redux", "Web3", "Tailwind CSS", , "Material UI", "Bootstrap", "GraphQL", "Jest", "Mocha", ]
+        skills: ["HTML", "CSS", "SASS", "JavaScript", "React JS", "Next JS","Node JS", "Express JS", "Redux", "Web3", "Tailwind CSS", "Material UI", "Bootstrap", "GraphQL", "Jest", "Mocha", ]
     },
     
     {
@@ -56,7 +56,8 @@ const SkillInfo = [
 const socialLinks = [
     { link: "https://github.com/ronak1311", icon: IconBrandGithub },
     { link: "https://www.linkedin.com/in/ronakkumar-gandhi/", icon: IconBrandLinkedin },
-    { link: "https://www.instagram.com/iam_rk.7/", icon: IconBrandInstagram }
+    { link: "https://www.instagram.com/iam_rk.7/", icon: IconBrandInstagram },
+    {link: "gandhironak6@gmail.com", icon: IconMail, isEmail:true}
 ];
 
 
