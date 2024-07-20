@@ -14,6 +14,7 @@ const Contact = () => {
         message: ""
     }
     const [formData, setFormData] = useState<{ [key: string]: string }>(form);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
     const [formError, setFormError] = useState<{ [key: string]: string }>(form);
     const formRef = useRef<HTMLFormElement>(null);
     const handleChange = (id: string, value: string) => {
@@ -22,6 +23,7 @@ const Contact = () => {
     }
     const handleSubmit=(e :React.FormEvent)=>{
         e.preventDefault();
+        setIsLoading(true);
         let valid=true;
         let newFormError:{[key:string]:string}={};
         for(let key in formData){
@@ -32,24 +34,24 @@ const Contact = () => {
             }
         }
         setFormError(newFormError);
-        console.log('formData --->', formRef.current);
         if(valid){
             const SERVICE_ID = process.env.REACT_APP_SERVICE_ID || '';
             const PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY || '';
             const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID || '';
             emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current!, PUBLIC_KEY)
-            .then((result: { text: any; }) => {
-                console.log(result.text);
+            .then(() => {
                 setFormData(form);
-                toast.success('Submitted Successfully!', {duration:4000});
+                toast.success('Email sent sucessfully!', {duration:4000});
+                setIsLoading(false);
           }, (error) => {
-            console.log(error.text);
             toast.error(error.text, {duration:4000});
+            setIsLoading(false);
           });
             
         }
         else{
-            toast.error('Some error occurred!', {duration:4000})
+            toast.error('Some error occurred!', {duration:4000});
+            setIsLoading(false);
         }
     }
 
@@ -68,8 +70,8 @@ const Contact = () => {
             <FloatingInput id="email" name="Email" value={formData.email} handleChange={handleChange}  error={formError.email}/>
             <FloatingInput id="phone" name="Phone Number" value={formData.phone} handleChange={handleChange}  error={formError.phone}/>
             <FloatingInput id="message" name="Message" value={formData.message} handleChange={handleChange}  error={formError.message}/>
-            <Button type="submit" fullWidth rightSection={<IconArrowRight size={20} />}
-                className="!text-bgColor !font-bold " variant="filled" size={btn} radius="lg" color="#64FFDA">Send</Button>
+            <Button type="submit" disabled={isLoading} fullWidth rightSection={isLoading ? null: <IconArrowRight size={20} />}
+                className="!text-bgColor !font-bold " variant="filled" size={btn} radius="lg" color="#64FFDA">{isLoading ? "Sending..." : "Send"}</Button>
             </form>
         </div>
     </div>
