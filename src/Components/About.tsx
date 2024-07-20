@@ -36,7 +36,7 @@ const About = () => {
                     <Social />
                     <div className="xs-mx:w-[90%] flex gap-3 xs-mx:justify-between">
                         <Button onClick={open} className="focus-visible:!outline-none !text-bgColor !w-fit xs-mx:!w-[46%]" size={btn} variant="filled" color="#64FFDA">Check Resume</Button>
-                        <Button component="a" href="/Ronakkumar_Gandhi.pdf" download={Info.name} className="focus-visible:!outline-none !text-primaryColor !w-fit xs-mx:!w-[46%]" size={btn} variant="outline" color="#64FFDA" rightSection={<IconDownload size={20} />}>Download</Button>
+                        <Button component="a" href="/Ronakkumar_Gandhi.pdf" download={Info.name} className="focus-visible:!outline-none !text-primaryColor !w-fit xs-mx:!w-[46%]" size={btn} variant="outline" color="#64FFDA" rightSection={<IconDownload size={20} />}>Download Resume</Button>
                     </div>
                 </div>
                 <div className="h-fit flex justify-center items-center rounded-full bs:mr-10 w-fit">
