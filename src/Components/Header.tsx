@@ -1,12 +1,12 @@
-import {  IconHexagon, IconHexagonLetterR } from "@tabler/icons-react";
+import {  IconHexagon } from "@tabler/icons-react";
 import SideBar from "./SideBar";
 import { useMediaQuery } from "@mantine/hooks";
 import { em } from "@mantine/core";
 
 const links=["About","Projects","Skills","Experience","Contact"];
-const navLinks=(col:Boolean)=>{
+const navLinks=(col: Boolean, toggle?: () => void)=>{
     return links.map((link, index)=>{
-        return  <a key={index} className={`${col?'flex flex-col items-center':''} text-textColor text-lg font-mono hover:text-primaryColor`} href={`#${link}`}><span className="text-primaryColor">{index}. </span>{link}</a>
+        return  <a key={index} className={`${col?'flex flex-col items-center':''} text-textColor text-lg font-mono hover:text-primaryColor`} href={`#${link}`} onClick={toggle? ()=> toggle() : undefined}><span className="text-primaryColor">{index}. </span>{link}</a>
     })
 }
 
