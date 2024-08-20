@@ -9,7 +9,7 @@ const Info = {
 
 const ProjectInfo = [
     {
-        title: "OpportuNest - Job Portal (Under development)",
+        title: "OpportuNest - Job Portal",
         desc: "Opportunest is a powerful job portal built with the MERN stack (MongoDB, Express.js, React.js, and Node.js) and optimized using Vite for fast development. It streamlines the job-hunting process by enabling students to create accounts, upload resumes, search for jobs, and apply with a single click, while recruiters can create profiles, post jobs, and manage applications. The platform offers a user-friendly interface built with React, ensuring a seamless experience across devices. It features resume management, detailed job postings, and application tracking, allowing recruiters to easily update candidate statuses. The scalable architecture ensures the platform can grow as the user base expands, with the backend deployed on Render.com and the frontend on Vercel.",
         image: "OpportuNest.png",
         live: true,
