@@ -9,6 +9,15 @@ const Info = {
 
 const ProjectInfo = [
     {
+        title: "OpportuNest - Job Portal (Under development)",
+        desc: "Opportunest is a powerful job portal built with the MERN stack (MongoDB, Express.js, React.js, and Node.js) and optimized using Vite for fast development. It streamlines the job-hunting process by enabling students to create accounts, upload resumes, search for jobs, and apply with a single click, while recruiters can create profiles, post jobs, and manage applications. The platform offers a user-friendly interface built with React, ensuring a seamless experience across devices. It features resume management, detailed job postings, and application tracking, allowing recruiters to easily update candidate statuses. The scalable architecture ensures the platform can grow as the user base expands, with the backend deployed on Render.com and the frontend on Vercel.",
+        image: "OpportuNest.png",
+        live: true,
+        technologies: ["React", "Redux", "Node", "Express","Vite", "Tailwind"],
+        link: "https://opportunest-jobportal.vercel.app/",
+        github: "https://github.com/ronak1311/opportunest"
+    },
+    {
         title: "Article Summarizer",
         desc: "The Article Summarizer Application is a cutting-edge tool designed to provide users with concise summaries of lengthy articles using the power of natural language processing and machine learning. Built with Vite for a fast and efficient development experience, the application's frontend leverages React.js for its component-based architecture and efficient rendering. Tailwind CSS is employed to style the application, offering a highly customizable and responsive design. The core summarization functionality is powered by OpenAI's GPT model, ensuring accurate and coherent summaries. State management is streamlined with Redux Toolkit, simplifying the process of managing and updating state in the application. Additionally, the application integrates with RapidAPI to access article data from various sources, providing users with quick and reliable summaries. The Article Summarizer Application combines robust technology with an interactive and user-friendly interface, making it easy to quickly grasp the main points and key information of any given text.",
         image: "Summarizer.png",
