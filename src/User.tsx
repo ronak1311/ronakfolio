@@ -72,9 +72,16 @@ const socialLinks = [
 
 const ExperienceInfo = [
     {
+        role: "Frontend Engineer",
+        company: "eLeorex Technologies",
+        date: "April 2023 - Present, Toronto,Canada",
+        desc: "Built and optimized high-performance user interfaces using ReactJS and TypeScript, achieving a 30% increase in user engagement. Collaborated with UX/UI teams to implement responsive designs, reducing page load times by 25%. Integrated RESTful APIs, enhancing data flow efficiency and reducing server response times by 40%. Streamlined state management with reusable components, boosting productivity by 20%, and improved code reliability by 50% through unit tests. Leveraged optimization techniques like lazy loading and code splitting, cutting initial load times by 35%. Enhanced CI/CD workflows with GitHub Actions and ensured scalability using Material-UI, contributing to seamless development and deployment processes.",
+        skills: ["React JS", "Typescript", "Javascript", "Next JS","Agile", "Jira", "Jenkins","Git", "Automation Testing", "CI/CD "]
+    },
+    {
         role: "Customer Service Representative",
         company: "Walmart",
-        date: "Dec 2022 - Present, Kitchener,Canada (Part Time)",
+        date: "Dec 2022 - September 2024, Kitchener,Canada (Part Time)",
         desc: "I successfully led the Fresh department team operations for a major Walmart project, demonstrating exceptional teamwork and communication skills. By increasing inventory accuracy by 20% through strategic planning and meticulous attention to detail, I surpassed challenging targets. My dedicated efforts in optimizing the sales floor organization enhanced the customer experience by 50% during both morning and overnight shifts. Managing one of the largest teams, I consistently delivered outstanding results and upheld high operational standards. Additionally, I provided exceptional customer service, promptly resolving inquiries and addressing customer needs, while excelling in stock management.",
         skills: ["Leadership", "Communication", "Team Management", "Customer Service"]
     },
